@@ -2,7 +2,7 @@
   <div id="app">
     <nav class="navbar navbar-expand-md navbar-dark bg-success">
       <a href="#" class="navbar-brand">REI Calcs</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="navbarNav" ><span class="navbar-toggler-icon"></span></button>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" ><span class="navbar-toggler-icon"></span></button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
           <router-link class="nav-item nav-link" to="/" tag="li" active-class="active" exact>Home</router-link>
@@ -20,8 +20,10 @@
         <p class="lead">Real Estate Investing can be complex, however, there are some general principals that are useful as quick starting points when evaluating properties.  The following calculators are great for getting a quick read on a property.  As always, do your due dilligence when investing in real estate and use these caclulators as one of your evaluation tools.</p>
       </div>
     </div>
-
-    <router-view></router-view>
+    <transition name="fade">
+        <router-view></router-view>
+    </transition>
+    
 
     <footer>
       <div class="container-fluid bg-secondary text-white text-center">
@@ -59,5 +61,18 @@ body {
 footer div {
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition-property: opacity;
+  transition-duration: .70s;
+}
+
+.fade-enter-active {
+  transition-delay: .70s;
+}
+
+.fade-enter, .fade-leave-active {
+  opacity: 0
 }
 </style>
