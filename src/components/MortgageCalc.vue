@@ -105,7 +105,7 @@
   }
 </script>
 
-<style>
+<style scoped>
 #results {
       display: none;
 }

@@ -14,19 +14,19 @@
           <div class="col-lg-3 col-md-6">
             <div class="buttonpic">
               <img src="../assets/apartments.svg" alt="" class="img-fluid img-thumbnail">
-              <router-link tag="button" to="/caprate" class="btn btn-success">Mortgage Calculator</router-link>
+              <router-link tag="button" to="/caprate" class="btn btn-success">Cap Rate Calculator</router-link>
             </div>
           </div>
           <div class="col-lg-3 col-md-6">
             <div class="buttonpic">
               <img src="../assets/rehab.svg" alt="" class="img-fluid img-thumbnail">
-              <router-link tag="button" to="/seventy" class="btn btn-success">Mortgage Calculator</router-link>
+              <router-link tag="button" to="/seventy" class="btn btn-success">70% Rule Calculator</router-link>
             </div>
           </div>
           <div class="col-lg-3 col-md-6">
             <div class="buttonpic">
               <img src="../assets/beachfront.svg" alt="" class="img-fluid img-thumbnail">
-              <router-link tag="button" to="/vacation" class="btn btn-success">Mortgage Calculator</router-link>
+              <router-link tag="button" to="/vacation" class="btn btn-success">Vacation Rental Calculator</router-link>
             </div>
           </div>
         </div>

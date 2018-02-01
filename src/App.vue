@@ -24,7 +24,7 @@
     <router-view></router-view>
 
     <footer>
-      <div class="container-fluid bg-dark text-white text-center">
+      <div class="container-fluid bg-secondary text-white text-center">
         Summit Web Designs &copy; 2018
       </div>
     </footer>
