@@ -21,7 +21,7 @@
                   </div>
                 </div>
                 <div class="form-group">
-                  <button @click="calculateResluts" class="btn btn-dark btn-block">Calculate</button>
+                  <button @click="calculateResluts" class="btn btn-dark btn-block" type="button" value="send">Calculate</button>
                 </div>
                 <hr>
                 <div class="input-group">
@@ -58,6 +58,8 @@
           this.arvPercent = parseFloat(this.arv) * 0.70;
           this.purchasePrice = this.arvPercent - parseFloat(this.rehab)
           this.purchase = this.purchasePrice.toLocaleString(undefined, {style: "currency", currency: "USD"});
+
+          
         }
       }
     }

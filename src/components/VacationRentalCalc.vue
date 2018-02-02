@@ -84,7 +84,7 @@
 
             <!-- Calculate Button -->
             <div class="form-group">
-              <button @click="calculateResluts" class="btn btn-dark btn-block">Calculate</button>
+              <button @click="calculateResluts" class="btn btn-dark btn-block" type="button" value="send">Calculate</button>
             </div>
           </form>
 
@@ -222,7 +222,6 @@
 
           // Show Results
           document.getElementById('results').style.display = 'block';
-         
         }
       }
     }

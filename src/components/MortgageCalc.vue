@@ -24,7 +24,7 @@
                 <input v-model="years" type="number" class="form-control" id="years" placeholder="Years to Repay">
               </div>
               <div class="form-group">
-                <button @click="calculateResluts" class="btn btn-dark btn-block">Calculate</button>
+                <button @click="calculateResluts" class="btn btn-dark btn-block" type="button" value="send">Calculate</button>
               </div>
             </form>
 

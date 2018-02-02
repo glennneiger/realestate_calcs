@@ -45,13 +45,13 @@
                 </div>
                 <div class="input-group">
                   <div class="input-group-prepend">
-                    <div class="input-group-text">$</div>
+                    <div class="input-group-text">%</div>
                   </div>
                   <input v-model="pm" type="number" class="form-control" id="pm"  placeholder="Property Management Fee">
                 </div>
               </div>
               <div class="form-group">
-                <button @click="calculateResluts" class="btn btn-dark btn-block">Calculate</button>
+                <button @click="calculateResluts" class="btn btn-dark btn-block" type="button" value="send">Calculate</button>
               </div>
               <hr>
               <div id="caprate" class="input-group">
@@ -102,7 +102,7 @@
 
         this.cap = ((this.yearlyCashFlow / parseFloat(this.amount)) * 100).toFixed(2) + '%';
 
-        
+        e.preventdefault();
       }
     }
   }
